@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function process()
+        {
+            var sample=document.getElementsByTagName('li')[2];
+            sample.style.color="red";
+            sample.style.borderstyle="double"; 
+            
+            let temp=document.getElementById('basic');
+            temp.style.color='red';
+            temp.style.textTrandform='uppercase';
+        }
+    </script>
+</head>
+<body>
+    <h2>basic function creation</h2>
+    <ol onclick="process()">web frameworks
+        <li>spring</li>
+        <li>hibernate</li>
+        <li>vue</li>
+        <li id="basic">bootstrap</li>
+        <li>angular js</li>
+        <li>react js</li>
+        <li>node js</li>
+    </ol>
+    
+</body>
+</html>
